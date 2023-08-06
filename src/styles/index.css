@@ -1,0 +1,200 @@
+:root {
+  --header-bg-color: #021d54;
+  --title-bg-color: #27384c;
+  --left-bg-color: #1c60b4;
+  --right-bg-color: #fff;
+  --white-text-color: #fff;
+  --black-text-color: #000;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .title {
+  background-color: var(--header-bg-color);
+  color: var(--white-text-color);
+  /* font-size: 2.4rem; */
+  font-weight: 700;
+  padding: 1.6rem 0.5rem;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header .header__presentation {
+  width: 100%;
+}
+
+.header__presentation .header_image_container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header .header__presentation img {
+  width: 100%;
+}
+
+.header__presentation .header-text {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header__presentation .header-text .name {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__presentation .header-text .study {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 1rem;
+  font-size: 1.8rem;
+}
+
+main .about-me-section  h3,
+main .experience-section h3 {
+  background-color: var(--header-bg-color);
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-me-section .card-about-me-section {
+  margin-bottom: 3rem;
+}
+
+.card-about-me-section.about-me p {
+  line-height: 1.4;
+}
+.contact-list {
+  list-style: none;
+}
+
+.about-me-section .contact-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.about-me-section .contact-list a {
+  color: var(--black-text-color);
+  text-decoration: none;
+}
+
+.about-me-section .contact-list a p {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.about-me-section .skills ul {
+  padding-left: 2rem;
+}
+
+.about-me-section .skills ul li {
+  margin-bottom: 0.7rem;
+}
+
+.about-me-section .skills .skills-card {
+  margin-bottom: 3rem;
+}
+
+
+.experience-section .video {
+  width: 100%;
+  height: 20rem;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.experience-section .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.experience-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+}
+
+.experience-section .table .table-item {
+  border: 2px solid #e1e1e1;
+  padding: .2rem .5rem;
+}
+
+.references ul {
+  padding-left: 2rem;
+}
+
+.references ul li {
+  margin-bottom: 0.7rem;
+}
+
+@media(min-width: 768px) {
+  .header__presentation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    place-items: center;
+  }
+
+  .header__presentation .header_image_container {
+    width: 100%;
+    padding: 1rem 0rem 1rem 1.5rem;
+  }
+
+  .header__presentation .header-text .name {
+    font-size: 7rem;
+    font-weight: 900;
+  }
+
+  .header__presentation .header-text .study {
+    font-size: 2.5rem;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .experience-section .video {
+    height: 30rem;
+  }
+}
+
+@media(min-width: 990px){
+  .main-container, .header__presentation {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+}

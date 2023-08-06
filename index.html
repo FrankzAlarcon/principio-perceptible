@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/normalize.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title" tabindex="1">Currículum Personal </h1>
+    <section class="header__presentation">
+      <div class="header_image_container">
+        <img tabindex="2" src="./src/assets/imgs/FrankzAlarcon.jpg" alt="Foto de Perfil">
+      </div>
+      <div class="header-text">
+        <p class="name" tabindex="3">Frankz Alarcón</p>
+        <p class="study" tabindex="4">Estudiante de Ingeniería en Software</p>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="main-container">
+      <section class="about-me-section">
+        <div class="card-about-me-section about-me">
+          <h3 tabindex="5">Sobre mí</h3>
+          <p tabindex="6">Soy estudiante de séptimo semestre de Ingeniería de Software y miembro del Equipo de
+            desarrollo web en la
+            Escuela Politécnica Nacional. Me destaco por mi habilidad de resolver problemas, mi compromiso constante por
+            aprender y adaptarme a las nuevas tecnologías.
+            Busco oportunidades laborales como desarrollador de aplicaciones web y móviles, donde pueda aplicar mis
+            habilidades y conocimientos, y rodearme de personas que busquen superarse todos los días.</p>
+        </div>
+        <div class="card-about-me-section">
+          <h3 tabindex="7">Contacto</h3>
+          <ul class="contact-list">
+            <li tabindex="8">
+              <a class="item" href="https://www.linkedin.com/in/frankz-lenin-alarc%C3%B3n-cando-591724268/"
+                title="Ir a mi Linkedin">
+                <img src="./src/assets/svgs/linkedin.svg" alt="Ícono de Linkedin">
+                <p>Frankz Lenin Alarcón Cando</p>
+              </a>
+            </li>
+            <li tabindex="9">
+              <a class="item" href="mailto:leninalarcon7@gmail.com" title="Enviarme un correo">
+                <img src="./src/assets/svgs/mail.svg" alt="Ícono de correo electrónico">
+                <p>leninalarcon7@gmail.com</p>
+              </a>
+            </li>
+            <li title="Mi número de teléfono" tabindex="10">
+              <div class="item">
+                <img src="./src/assets/svgs/contact.svg" alt="Ícono de Contacto telefónico">
+                <p>0985352939</p>
+              </div>
+            </li>
+            <li tabindex="11">
+              <a class="item" href="https://frankz-web-portfolio.vercel.app/" title="Mi portafolio web">
+                <img src="./src/assets/svgs/home.svg" alt="Ícono de Portafolio web">
+                <p>Frankz Alarcón - Portafolio Web</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-about-me-section skills" title="Habilidades">
+          <div class="skills-card">
+            <h3 tabindex="12">Habilidades Técnicas</h3>
+            <ul>
+              <li tabindex="13">Javascript - Nodejs - Typescript</li>
+              <li tabindex="14">React - Nextjs</li>
+              <li tabindex="15">Creación de APIs REST y Graphql</li>
+              <li tabindex="16">MySQL - Postgresql</li>
+              <li tabindex="17">Firebase</li>
+              <li tabindex="18">React Native</li>
+              <li tabindex="19">Git</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3 tabindex="20">Habilidades Blandas</h3>
+            <ul>
+              <li tabindex="21">Colaboración y trabajo en Equipo</li>
+              <li tabindex="22">Pasión por nunca parar de aprender</li>
+              <li tabindex="23">Adaptabilidad a cualquier entorno</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="experience-section">
+        <div class="video" tabindex="24">
+          <h2>Video</h2>
+        </div>
+        <div class="studies">
+          <h3 tabindex="30">Estudios</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table-item" tabindex="31">Estudios</th>
+                <th class="table-item" tabindex="32">Institución</th>
+                <th class="table-item" tabindex="33">Periodo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-item" tabindex="34">Bachillerato Técnico en Aplicaciones Informáticas</td>
+                <td class="table-item" tabindex="35">Unidad Educativa "Guillermo Bustamante Cevallos"</td>
+                <td class="table-item" tabindex="36">2016 - 2019</td>
+              </tr>
+              <tr>
+                <td class="table-item" tabindex="37">Ingeniería de Software</td>
+                <td class="table-item" tabindex="38">Escuela Politécnica Nacional</td>
+                <td class="table-item" tabindex="39">2019 - Actualidad</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="projects">
+          <h3 tabindex="40">Proyectos</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table-item" tabindex="41">Proyecto</th>
+                <th class="table-item" tabindex="42">Descripción</th>
+                <th class="table-item" tabindex="43">Periodo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-item" tabindex="44">Aplicación Web para una Barbería</td>
+                <td class="table-item" tabindex="45">Desarrollo de una aplicación web para la gestión de una barbería.
+                  Creada como
+                  proyecto de la
+                  materia de "Aplicaciones Web"</td>
+                <td class="table-item" tabindex="46">2022B</td>
+              </tr>
+              <tr>
+                <td class="table-item" tabindex="47">Aplicación Web para la gestión de citas médicas</td>
+                <td class="table-item" tabindex="48">Desarrollo de una aplicación web para la gestión de citas médicas.
+                  Desarrollada
+                  usando SCRUM</td>
+                <td class="table-item" tabindex="49">2022B</td>
+            </tbody>
+          </table>
+        </div>
+        <div class="references">
+          <h3 tabindex="50">Referencias</h3>
+          <ul>
+            <li tabindex="52">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis accusantium
+              blanditiis ex
+              officiis explicabo numquam!</li>
+            <li tabindex="53">nostrum voluptas quaerat repellat aperiam a ducimus nihil veniam natus libero
+              sequi nobis temporibus</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>
